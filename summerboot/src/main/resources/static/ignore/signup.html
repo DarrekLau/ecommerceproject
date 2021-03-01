@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign up</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81d30d81d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet.css">
+<!--    <script src="main_js.js "></script>-->
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="company-logo">
+                <img src="../PhotoStudio/logo.png" alt="Company logo">
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="nav_bar">
+            <ul class="navbar">
+                <li><a href="/home.html">HOME</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/services.html">SERVICES</a></li>
+                <li><a href="/gallery.html">GALLERY</a></li>
+                <button type="button" class="btn btn-outline-dark"><a href="login.html">Log in</a></button>
+                <a class="cart" href="/cart.html"><i class="fas fa-shopping-bag fa-2x"><span> 0</span></i></a>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <form th:action="@{/user/new}" th:object="${user}" method="POST">
+        <div class="signUp">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" th:field="*{email}" name="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="userName" class="form-label">Username <span class="text-muted">(Required)</span></label>
+                    <input th:field="*{username}" type="text" name="username" class="form-control" id="userName" placeholder="Username Required">
+                    <div class="invalid-feedback">
+                        Username is required for registration.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="pw" class="form-label">Password <span class="text-muted">(Required)</span></label>
+                    <input type="password" th:field="*{password}" class="form-control" name="password" id="pw" placeholder=password required="">
+                    <div class="invalid-feedback">
+                        Please enter your shipping address.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="address" class="form-label">Address <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address" placeholder="Apartment or suite">
+                </div>
+
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option>Singapore</option>
+                        <option>Outside of Singapore</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required="">
+                        <option value="">Choose...</option>
+                        <option>California</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="postal" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="postal" placeholder="" required="">
+                    <div class="invalid-feedback">
+                        Postal code required.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="signup btn btn-outline-dark" value="New User"/>Sign Up</button>
+        </form>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <a href="mailto:dlj@gmail.com"><img class="logo" src="../PhotoStudio/logo.png">
+                    </a>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <p class="address">(+65)333400 <br> <a href="mailto:dlj@gmail.com">Send us an email here</a><br> 20 Cecil Street #16-04 EQUITY PLAZA<br>Singapore 049705<br>
+                        </p>
+                    </div>
+                    <div class="col-md-6 right">
+                        <h3 class="follow-us">Follow Us</h3>
+                        <a class="social-media-icon" href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a class="social-media-icon" href="https://www.twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>&#9400; Copyright 2020-2021 All rights reserved</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

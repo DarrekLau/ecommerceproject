@@ -1,0 +1,55 @@
+[{
+        "productId": 1,
+        "productName": "Wedding package",
+        "productCode": "DLJ-01",
+        "description": "We fly you to your dream destination in style. Let our team make the all the arrangements while you look your best for your special day, glamourous and effervescent.",
+        "price": 5000,
+        "image": "weddingPackage",
+        "imageUrl": "https://www.dusitthanilagunasingapore.com/public/wedding/images/Wedding_CelebrationsParties2_1100x750.jpg"
+    },
+    {
+        "productId": 2,
+        "productName": "Architectural",
+        "productCode": "DLJ-02",
+        "description": "We shoot onsite with our vast array lenses suited for capturing landscapes and large scales buildings intended for commercial purposes for your websites or brochures.",
+        "price": 1000,
+        "image": "architectural",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/50bce2dfe4b01f474524eb8e/1456799367252-43BJ5ESZ9AASFMJAUDEX/ke17ZwdGBToddI8pDm48kNnVUdz0LMwmPl0bUEdqt1x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UY9kEpUDRFtF-iv7XsWZcTVPg8yOhK8LaOZuZMsCG_7vVVjs4-Y4P_C8EhABwvP0NA/image-asset.jpeg"
+    },
+    {
+        "productId": 3,
+        "productName": "Studio",
+        "productCode": "DLJ-03",
+        "description": "Whether it is for a corporate profiles,  ",
+        "price": 2000,
+        "image": "studio",
+        "imageUrl": "https://ohdearstudio.com.sg/wp-content/uploads/2020/11/Extended-Big-family-Photoshoot.jpg"
+    },
+    {
+        "productId": 4,
+        "productName": "Drone",
+        "productCode": "DLJ-04",
+        "description": "<Insert description for Drone>",
+        "price": 3500,
+        "image": "drone",
+        "imageUrl": "https://ak.picdn.net/shutterstock/videos/12740642/thumb/1.jpg"
+    },
+    {
+        "productId": 5,
+        "productName": "Outdoor",
+        "productCode": "DLJ-05",
+        "description": "<Insert description for Outdoor>",
+        "price": 3000,
+        "image": "outdoor",
+        "imageUrl": "https://singaporemotherhood.com/articles/wp-content/uploads/2019/01/Summer-and-family.jpg"
+    },
+    {
+        "productId": 6,
+        "productName": "Product",
+        "productCode": "DLJ-06",
+        "description": "<Insert description for Product >",
+        "price": 4500,
+        "image": "product",
+        "imageUrl": "https://www.hoopstudio.com.sg/wp-content/uploads/2018/10/stylized-photo-9.jpg"
+    }
+]

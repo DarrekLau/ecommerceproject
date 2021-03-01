@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DLJ & Co Gallery - Product</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81d30d81d6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- Logo -->
+<div class="container">
+    <div class="top">
+        <div class="company-logo">
+         <img src="/assets/images/logo.png" alt="Company logo">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark rounded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-lg"><span class="navbar-toggler-icon"></span></i>
+        </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="" href="home.html">HOME </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="nav-item btn dropdown-toggle " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        PORTFOLIO
+                    </a>
+                    </li>
+                    <li><a class="nav-item" href="login">LOGIN</a></button>
+                        <!--Suggest use bootstrap modal for this func, but may also be done with onClick event go back page-->
+                    </li>
+<!--                    <li>-->
+<!--                        <div clas="container"><a class="cart" href="/cart.html"><i class="fas fa-shopping-bag fa-2x iconpad"><span> 0</span></i></a></div>-->
+<!--                    </li>-->
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="collapse" id="collapseExample">
+            <div class="container dropdownbtn dropdownbtn-txt">
+                <div class="row">
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_architecture.html">Architecture</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_drone.html">Drone</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_studio.html">Studio</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_product.html">Product</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_outdoors.html">Outdoors</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_wedding.html">Wedding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--    Block Gallery-->
+
+        <div class="container-products divpad">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="colOffset1"></div>
+                    <div class="card">
+                        <img id="myImg1" class="card-img-top" src="assets/images/productphot/chanel5.jpg" alt="Product Photography" style="object-position:57%">
+                        <!--        <div class="card-block">-->
+                        <!--            <h4 class="card-title">Card title</h4>-->
+                        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                        <!--        </div>-->
+                        <!--        <div class="card-footer">-->
+                        <!--            <small class="text-muted">Last updated 3 mins ago</small>-->
+                        <!--        </div>-->
+                    </div>
+
+                    <div class="offset"></div>
+
+                    <div class="card">
+                        <img id="myImg2" class="card-img-top" src="assets/images/productphot/cameras.jpg" alt="Product Photography - Tech" style="object-position:30% 15%">
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="colOffset2"></div>
+                    <div class="card">
+                        <img id="myImg3" class="card-img-top" src="assets/images/productphot/oil.jpg" alt="Product photography - food">
+                        <!--        <div class="card-block">-->
+                        <!--            <h4 class="card-title">Card title</h4>-->
+                        <!--            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
+                        <!--        </div>-->
+                        <!--        <div class="card-footer">-->
+                        <!--            <small class="text-muted">Last updated 3 mins ago</small>-->
+                        <!--        </div>-->
+                    </div>
+                    <!--        &lt;!&ndash; The Modal &ndash;&gt;-->
+                    <!--        <div id="myModal" class="modal">-->
+                    <!--            <span class="close">&times;</span>-->
+                    <!--            <img class="modal-content" id="img01">-->
+                    <!--            <div id="caption"></div>-->
+                    <!--        </div>-->
+
+                    <div class="offset"></div>
+                    <div class="card">
+                        <img id="myImg4" class="card-img-top" src="assets/images/productphot/mouse.jpg" alt="Product Photography - Tech">
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="colOffset3"></div>
+                    <div class="card">
+                        <img id="myImg5" class="card-img-top" src="assets/images/productphot/shampoo.jpg" alt="Product photography">
+                        <!--        <div class="card-block">-->
+                        <!--            <h4 class="card-title">Card title</h4>-->
+                        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>-->
+                        <!--        </div>-->
+                        <!--        <div class="card-footer">-->
+                        <!--            <small class="text-muted">Last updated 3 mins ago</small>-->
+                        <!--        </div>-->
+                    </div>
+                    <div class="offset"></div>
+                    <div class="card">
+                        <img id="myImg6" class="card-img-top" src="assets/images/productphot/sneakers.jpg" alt="Product photography" style="object-fit:none; object-position: 25%">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        </div>
+
+        <!-- Empty container -->
+        <div class="container services">
+            <div class="row">
+
+            </div>
+        </div>
+
+        <!-- Other product cards preamble-->
+
+        <div class="portfolio-description">
+            <h1>Product</h1>
+            <p class="lead text-muted">Every product has a story to tell about its quality, functionality and utility. We photograph every piece like it’s our own proud creation. Our images help you convey the story and demand attention.</p>
+        </div>
+
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <a href="home.html"><img class="logo" src="/assets/images/logo.png">
+                    </a>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <p class="address">(+65)333400 <br> <a href="mailto:dlj@gmail.com">Send us an email here</a><br> 20 Cecil Street #16-04 EQUITY PLAZA<br>Singapore 049705<br>
+                        </p>
+                    </div>
+                    <div class="col-md-6 right">
+                        <h3 class="follow-us">Follow Us</h3>
+                        <a class="social-media-icon" href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a class="social-media-icon" href="https://www.twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>&#9400; Copyright 2020-2021 All rights reserved</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="assets/js/main_js.js"></script>
+    <script src="assets/js/waterfall.js"></script>
+    <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</body>
+
+</html>

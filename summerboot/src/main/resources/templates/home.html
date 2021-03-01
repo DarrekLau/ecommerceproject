@@ -1,0 +1,212 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DLJ & Co.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81d30d81d6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="container">
+        <div class="top">
+            <div class="company-logo">
+                <img src="/assets/images/logo.png" alt="Company logo">
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark rounded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-lg"><span class="navbar-toggler-icon"></span></i>
+        </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="" href="home">HOME </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="nav-item btn dropdown-toggle " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            PORTFOLIO
+                    </a>
+
+                    </li>
+                    <li>
+                        <div sec:authorize="isAuthenticated()">
+                            <h4 th:inline="text">[[${#httpServletRequest.remoteUser}]]</h4>
+                        </div>
+    
+                        <div sec:authorize="isAnonymous()">
+                            <button type="button" class="btn btn-outline-dark"><a href="/login">Log in</a></button>
+                        </div>
+    
+                    </li>
+<!--                    <li><a class="nav-item" href="login.html">LOGIN</a></button>-->
+<!--                        &lt;!&ndash;Suggest use bootstrap modal for this func, but may also be done with onClick event go back page&ndash;&gt;-->
+<!--                    </li>-->
+                    <li>
+                        <div clas="container"><a class="cart" href="/cart"><i class="fas fa-shopping-bag fa-2x iconpad"><span> 0</span></i></a></div>
+                    </li>
+                    <li>
+                        <div>  <form th:action="@{/logout}" method="post">
+                            <h2> <input type="submit"  class="btn btn-outline-dark-lg" value="Sign Out"/></h2>
+                        </form>
+                        </div></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="collapse" id="collapseExample">
+            <div class="container dropdownbtn dropdownbtn-txt">
+                <div class="row">
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_architecture">Architecture</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_drone">Drone</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_studio">Studio</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_product">Product</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_outdoors">Outdoors</a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <a class="dropdownbtn-txt" href="gallery_wedding">Wedding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- content -->
+
+        <div class="parallax">
+            <h1 class="parallax-text">
+                Today's MOMENTS<br>are tomorrow's MEMORIES</h1>
+        </div>
+
+
+        <div class="text-box">
+            We strive to capture those special moments as they happen. It means being alive to the present, honouring the past, creating real treasures for the future. If you're looking for a photographer who relishes the polished + proper portraits, then you've
+            come to the wrong place. We are all about the inbetween moments; we thrive in the details.
+        </div>
+
+        <div class="parallax2"></div>
+
+
+        <div class="container carousel">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide container" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/Architectural_Photog_Bugis.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/assets/images/studio.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/assets/images/drone_sg.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/assets/images/product-photo3.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/assets/images/wedding.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom container">
+            <div class="row gallery">
+                <div class="column">
+                    <img src="/assets/images/singapore1.jpg" alt="Gardens By The Bay" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/gowns2.png" alt="Wedding gown" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/scenery.jpg" alt="Beautiful scenery" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/wedding3.jpg" alt="Wedding 2" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/wedding.jpg" alt="Wedding 3" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <a href="home.html"><img class="logo" src="/assets/images/logo.png">
+                    </a>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <p class="address">(+65)333400 <br> <a href="mailto:dlj@gmail.com">Send us an email here</a><br> 20 Cecil Street #16-04 EQUITY PLAZA<br>Singapore 049705<br>
+                        </p>
+                    </div>
+                    <div class="col-md-6 right">
+                        <h3 class="follow-us">Follow Us</h3>
+                        <a class="social-media-icon" href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a class="social-media-icon" href="https://www.twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>&#9400; Copyright 2020-2021 All rights reserved</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="assets/js/main_js.js"></script>
+    <script src="assets/js/waterfall.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</body>
+
+</html>

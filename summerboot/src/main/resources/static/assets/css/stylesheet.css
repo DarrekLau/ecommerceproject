@@ -1,0 +1,1313 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* -------------------- NAV BAR--------------------*/
+
+.top {
+    border-bottom: 2px solid black;
+}
+
+.company-logo>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.company-logo-about>a>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    /*padding: 20px;*/
+    cursor: pointer;
+    padding-top: 45px;
+    padding-bottom: 40px
+}
+
+
+/* .nav_bar {
+    display: inline-block;
+    text-align: center;
+} */
+
+.navbar li a {
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 26px;
+    padding: 8px 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 49);
+    /*padding: 30px 50px;*/
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+}
+
+.navbar li a:hover {
+    color: rgb(194, 194, 194);
+}
+
+.nav-list,
+li,
+a {
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    /*background-color: rgb(255, 255, 255);*/
+    text-decoration: none;
+    margin: auto;
+}
+
+.navbtn {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 8px 30px;
+    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s
+}
+
+.navbtn :hover {
+    color: rgb(5, 255, 255);
+}
+
+.navbtn.btn-outline-dark.top {
+    display: block;
+    margin: 40px auto;
+    scroll-behavior: smooth;
+}
+
+
+/*.fas {*/
+
+
+/*    color: rgb(37, 37, 37);*/
+
+
+/*    padding-left: 70px;*/
+
+
+/*}*/
+
+.dropdownbtn {
+    color: rgb(200, 0, 200);
+    border: 2px solid rgba(100, 100, 100, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 0 .12rem rgba(180, 180, 180, .25);
+    background-color: rgb(250, 250, 250);
+    width: 800px;
+    position: relative;
+    right: 20px;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    border: 2px solid rgba(5, 5, 5, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 0 .12rem rgba(100, 100, 100, 0);
+}
+
+.dropdownbtn-txt {
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    /*background-color: rgb(220, 220, 220);*/
+    color: rgb(123, 123, 123);
+    padding: 15px 10px;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: lightgrey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 2px solid rgba(100, 100, 100, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 0 .12rem rgba(100, 100, 100, .2);
+}
+
+.btn-shadow {
+    padding: 8px 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 .12rem rgba(100, 100, 100, .2);
+}
+
+.iconcart {
+    text-align: -moz-center;
+    text-align: center;
+    position: relative;
+    padding: 5px 0px;
+}
+
+
+/*needing to hook below attrib into bootstrap resource*/
+
+.nav-item {
+    padding: 15px 25px;
+    /*padding: 10px 25px; OG*/
+}
+
+.iconpad {
+    padding: 10px;
+}
+
+.navbar-toggler-icon {
+    color: rgb(57, 57, 57);
+}
+
+
+/* - ************************************************************
+
+                         INDEX PAGE
+
+************************************************************   - */
+
+
+/* -------------------- Parallax --------------------*/
+
+.parallax {
+    /* The image used */
+    background-image: url("/assets/images/wedding_main.jpg");
+    /* Set a specific height */
+    height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 35px;
+}
+
+.parallax-text {
+    text-align: left;
+    padding: 200px 0px 50px 100px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.text-box {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-indent: 80px;
+    color: rgb(41, 41, 41);
+    background-color: rgb(255, 255, 255);
+    /*height: 100%;*/
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+    line-height: 45px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("/assets/images/cityscapes.jpg");
+    /* Set a specific height */
+    height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 35px;
+}
+
+
+/* -------------------- CAROUSEL --------------------*/
+
+.container.carousel {
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.container.row {
+    margin-top: 10px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.carousel-home {
+    margin: 0;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+/* --------------------PHOTO GALLERY--------------------*/
+
+.bottom {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.row.gallery {
+    display: flex;
+    padding: 50px 0px;
+    background-color: white;
+}
+
+.column {
+    flex: 20%;
+    padding: 5px;
+}
+
+.column>img:hover {
+    transform: scale(2) rotateZ(0deg);
+    -moz-transform: scale(2) rotateZ(0deg);
+    -webkit-transform: scale(2) rotateZ(0deg);
+    -o-transform: scale(2) rotateZ(0deg);
+    transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    margin-top: -100px;
+    display: relative;
+    -ms-transform: scale(2) rotateZ(0deg);
+}
+
+.column>img:hover {
+    visibility: visible;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    margin-top: -25%;
+    left: 230px;
+    z-index: 50;
+}
+
+
+/* -------------------- FOOTER--------------------*/
+
+.footer {
+    padding: 35px 0px;
+    background-image: url("/assets/images/footer2.png");
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    padding: 45px 0 10px 0px;
+    cursor: pointer;
+}
+
+hr:not([size]) {
+    display: block;
+    height: 4px;
+    width: 80%;
+    color: rgb(29, 29, 29);
+    margin: auto;
+}
+
+.contact-us {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.address {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.social-media-icon {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+h3.follow-us {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.col-md-6.right {
+    padding-left: 200px;
+}
+
+i {
+    padding-right: 35px;
+    color: rgb(32, 32, 32);
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+i:hover {
+    color: #c9c9c9;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* - ************************************************************
+
+                         ABOUT PAGE
+
+************************************************************   - */
+
+.imgpad {
+    padding-bottom: 5px;
+}
+
+.img-fluid {
+    padding-top: 50px;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url("/assets/images/esplanade.jpg");
+    /* Set a specific height */
+    height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 35px;
+}
+
+.about {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.about-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    padding-top: 20px;
+    text-indent: 80px;
+    text-align: justify;
+}
+
+.about-text2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    text-indent: 80px;
+}
+
+.flex-container.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.card-about {
+    width: 450px;
+}
+
+.team.card-img-top {
+    width: 380px;
+    height: 420px;
+    padding: 15px;
+}
+
+.about.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-text.about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+/* - ************************************************************
+
+                         SERVICES PAGE
+
+************************************************************   - */
+
+.container.services {
+    margin-top: 30px;
+    padding: 40px;
+    /* border: 5px solid rgb(66, 66, 66); */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.row_title {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.row.item {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.item-img {
+    display: block;
+    position: relative;
+    width: 550px;
+    height: 385px;
+    padding: 20px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.item-img:hover {
+    opacity: 0.4;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.col-md-6.services {
+    padding: 20px 50px;
+}
+
+.serviceName {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    width: 500px;
+    padding: 30px 20px;
+    color: rgb(37, 37, 37);
+}
+
+.details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 500px;
+    padding: 10px 10px 20px 10px;
+}
+
+.service.price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    width: 500px;
+    padding: 25px 20px;
+}
+
+.add-cart {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.3 ease 5s;
+    -webkit-transition: all 0.3 ease s;
+    -moz-transition: all 0.3 ease s;
+    -ms-transition: all 0.3 ease s;
+    -o-transition: all 0.3 ease s;
+}
+
+.add-cart:hover {
+    color: rgb(15, 15, 15);
+    background-color: white;
+}
+
+i.fas span {
+    font-size: 30px;
+}
+
+.btn.btn-outline-dark.top {
+    display: block;
+    margin: 40px auto;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+
+/* - ************************************************************
+
+                         GALLERY PAGE
+
+************************************************************   - */
+
+.lead {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 200px;
+}
+
+.divpad {
+    padding: 25px;
+}
+
+.colOffset1 {
+    padding: 20px 0px;
+}
+
+.colOffset2 {
+    padding: 70px 0px;
+}
+
+colOffset3 {
+    padding: 40px 0px;
+}
+
+.offset {
+    padding: 20px 0px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    opacity: .85;
+    height: 600px;
+    /*border-radius: 40px;*/
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgba(180, 180, 180, .5);
+}
+
+
+/*Modal modes*/
+
+
+/*==========================================================*/
+
+#myImg1,
+#myImg2,
+#myImg3,
+#myImg4,
+#myImg5,
+#myImg6 {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.col-4>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottomLinks {
+    width: 300px;
+    height: 280px;
+    padding: 5px;
+    object-fit: cover;
+    /* display:block; */
+}
+
+
+/*screen wide lines, really wonky for a simple line*/
+
+hr.top {
+    width: 95%;
+    height: 2px;
+    background-color: rgb(24, 23, 23);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*border-width: 2px;
+    border-color: green;*/
+}
+
+
+/*For centering divs*/
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    /*border: 5px solid #FFFF00;*/
+}
+
+.splash {
+    border: 1px solid rgb(202, 201, 201);
+    padding: 40px;
+    box-shadow: 5px 5px 10px rgb(184, 183, 183);
+}
+
+.pageformat {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+}
+
+.imgsize {
+    padding: 5px;
+    width: 110%
+}
+
+.imgshift {
+    margin-right: 50px;
+}
+
+.weddingFont {
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.weddingText {
+    padding-left: 5%;
+    padding-top: 0%;
+    padding-bottom: 6%;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(30, 30, 30);
+    text-align: right;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px"
+
+}
+
+.wedding_Text {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    color: rgb(30, 30, 30);
+    text-align: left;
+    padding: 50px 20px 20px 0px;
+    line-height: 60px;
+}
+
+.pricesCard {
+    font-size: 80%;
+}
+
+hr.prices {
+    padding-top: -20px;
+}
+
+
+/*.quadimg {
+    padding: 20px;
+}*/
+
+.aboutimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 45rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 45rem;
+}
+
+.carousel-img {
+    object-fit: cover;
+}
+
+
+/* HOVER ELEMENTS
+-------------------------------------------------- */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    margin: auto;
+    width: 91%;
+    height: 90%
+}
+
+
+/* .containerOverlay { */
+
+
+/* position: relative; */
+
+.container:hover .overlay {
+    opacity: .8;
+}
+
+.linkText {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+/* - ************************************************************
+
+                         SIGN UP PAGE
+
+************************************************************   - */
+
+.form-label {
+    padding-top: 20px;
+    font-size: 20px;
+    ;
+}
+
+.signUp.form {
+    border: 3px solid rgb(71, 71, 71);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.signup {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 50px auto;
+    padding: 5px 30px;
+    border: 2px solid rgb(50, 50, 50);
+}
+
+
+/* - ************************************************************
+
+                         CART PAGE
+
+************************************************************   - */
+
+
+/* .container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    ;
+} */
+
+.cart-box {
+    border-style: inset;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 80px 0px;
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products i.far {
+    font-size: 25px;
+    color: rgb(37, 37, 37);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+.price {
+    width: 20%;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    align-items: center;
+    font-weight: 15px;
+}
+
+.quantity {
+    width: 20%;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    align-items: center;
+    /*border-bottom: 1px solid lightgray; */
+}
+
+.quantity i.far {
+    padding: 0px;
+}
+
+.total {
+    width: 15%;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+.product i.far {
+    cursor: pointer;
+    padding: 0px;
+}
+
+span.sm-hide {
+    font-size: 20px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.products .cart-img {
+    width: 75px;
+    margin-right: 10px;
+}
+
+div.price.sm-hide {
+    font-size: 20px;
+    width: 20%;
+}
+
+div.quantity {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+div.quantity span {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.total {
+    font-size: 20px;
+    width: 15%;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 72%;
+    margin-left: 450px;
+}
+
+.basketTotal {
+    width: 28%;
+}
+
+.payment.methods {
+    border-style: inset;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 80px 0px;
+    padding: 50px 20px;
+}
+
+.text-center {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.col-xs-12 {
+    display: block;
+    margin: 0 auto;
+}
+
+.cc-img {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.form-group {
+    font-size: 20px;
+}
+
+@media(max-width: 500px) {
+    /* nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    } */
+    .sm-hide {
+        display: none;
+        ;
+    }
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}
+
+
+/* - ************************************************************
+
+                         PAYMENT SUCCESSFUL
+
+************************************************************   - */
+
+.yes-hedgehog {
+    display: block;
+    margin: 0 auto;
+}
+
+.far.fa-check-circle {
+    color: rgb(83, 240, 83);
+    text-align: center;
+    padding-left: 45%;
+    padding-right: 55%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.hedgehog {
+    /* padding-left: 30%;
+    padding-right: 70%; */
+    display: block;
+    margin: 0 auto;
+    padding: 50px auto;
+}
+
+.payment-successful {
+    animation: color-change 0.5s infinite;
+    -webkit-animation: color-change 0.5s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(255, 123, 0);
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: rgb(0, 236, 0);
+    }
+}
+
+
+/*----------------------- MEDIA QUERIES -----------------------*/
+
+
+/* For mobile phones */
+
+@media screen and (max-width: 480px) {
+    .top {
+        width: 80%;
+        margin: auto;
+    }
+    .logo,
+    .company-logo {
+        width: 110%;
+    }
+    .nav-item>a {
+        font-size: 20px;
+    }
+    .navbar-toggler-icon {
+        color: rgb(57, 57, 57);
+    }
+    .dropdownbtn-txt {
+        font-size: 15px;
+    }
+    .container-footer,
+    .footer {
+        width: 100%;
+        font-size: 10px;
+    }
+    .address,
+    h3.follow-us {
+        font-size: 15px;
+        text-align: center;
+        padding: 0;
+    }
+    .col-md-6.right {
+        padding: 0px 110px;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+    i.fab {
+        width: 60%;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .parallax,
+    .parallax2 {
+        height: 500px;
+    }
+    .parallax-text {
+        font-size: 20px;
+    }
+    .text-box {
+        font-size: 15px;
+    }
+}
